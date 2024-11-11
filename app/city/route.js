@@ -8,9 +8,9 @@ export async function GET(){
 }
 
 export async function POST(request){
-    const {name, population, country, elevation, cityId} = await request.json()
+    const {name, population, country, cityId} = await request.json()
     // await connectMongoDB()
-    await City.create({name, population, country, elevation, cityId});
+    await City.create({name, population, country, cityId});
     return NextResponse.json({message: "City added to favourites!"}, {status: 201})
 }
 

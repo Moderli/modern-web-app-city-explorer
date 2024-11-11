@@ -16,7 +16,6 @@ export default function List({ geoData }){
             <Th>Name</Th>
             <Th>Population</Th>
             <Th>Country</Th>
-            <Th>Elevation</Th>
             <Th>City ID</Th>
             </Tr>
         </Thead>
@@ -28,7 +27,6 @@ export default function List({ geoData }){
                 </Td>
                 <Td>{item.population}</Td>
                 <Td>{item.country}</Td>
-                <Td>{item.elevation}m</Td>
                 <Td>{item.id}</Td>
             </Tr>
             ))}
